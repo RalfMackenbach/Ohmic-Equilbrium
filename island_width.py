@@ -103,10 +103,20 @@ island_sep = int(maxarr[-1,0])
 island_w   = maxarr[-1,1]
 
 
-print(island_w)
-print(island_sep)
+print('island width is: {}'.format(island_w))
+print('island separatrix is out{}'.format(island_w))
+
+file = open('island_width_and_sep','w') 
+ 
+file.write('Island width:') 
+file.write(island_w) 
+file.write('Island separatrix out file:') 
+file.write(island_sep) 
+ 
+file.close() 
 
 
 plotexam = arrays[island_sep]
 plt.scatter(plotexam[:,1],plotexam[:,0])
 plt.show()
+
