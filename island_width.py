@@ -104,14 +104,12 @@ island_w   = maxarr[-1,1]
 
 
 print('island width is: {}'.format(island_w))
-print('island separatrix is out{}'.format(island_w))
+print('island separatrix is out{}'.format(island_sep))
 
-file = open('island_width_and_sep','w') 
+file = open('width_and_sep','w') 
  
-file.write('Island width:') 
-file.write(island_w) 
-file.write('Island separatrix out file:') 
-file.write(island_sep) 
+file.write('island width is: {}\n'.format(island_w)) 
+file.write('island separatrix is out{}\n'.format(island_sep))
  
 file.close() 
 
