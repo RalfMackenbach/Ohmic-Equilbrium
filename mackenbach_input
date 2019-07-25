@@ -1,0 +1,45 @@
+&mackenbach_input
+! Numerical Options
+! =================
+	drho		=	1E-5	! Stepsize for forward Euler
+
+! Model Options
+! =============
+	b_flat		=	0	! Parameter indiciting if the 
+					! pressure will be calculated
+					! consistently via the q profile 
+					! (b_flat = 1), or if one will 
+					! assume a flat b_z profile 
+					! (b_flat = 0). q-profile is
+					! defined in the .f90 file
+	eta_fac		=	1.0	! Prefactor for spitzer resistivity
+	mu_fac		=	1.0	! Prefactor for viscosity, but also
+					! for F0_real. This is to keep the
+					! max velocity fixed.
+! Physical parameters
+! ===================
+	ln_lambda	=	17.0	! Plasma parameter
+	z_ion		=	1	! Charge number for ions
+	beta		=	0.0	! Fraction of non-Ohmic
+					! heating (from an 
+					! external heat source)
+	t_end		=	5.E-2	! Fraction of central
+					! temperature value at
+					! edge
+	p_inf		=	1.E-3	! Fraction of central
+					! pressure value at
+					! edge
+	a		=	1.0	! Minor radius
+	R0		=	10.0	! Major radius
+	Ip		=	1.0E6	! Plasma current
+	kappa0		=	1E22	! Heat diffusivity
+	v_fin		=	0.0	! Fraction of central
+					! velocity value at
+					! edge
+	F0_real		=	1.0E1	! Total toroidal force
+					! density
+	mu_v_real	=	5.0E-5 	! Viscosity
+	q0		= 	4.0	! Central q0 value.
+					! Only applicible iff
+					! b_flat=0
+/
